@@ -1,7 +1,7 @@
-This repository includes material used to study and master Bash Scripting. 
+## This repository includes material used to study and master Bash Scripting. 
 
-Bash: Command-line tool to interact with an OS.
-Bash Script: File containing commands to be executed automatically.
+Bash: Command-line tool to interact with an OS.<br></br>
+Bash Script: File containing commands to be executed automatically.<br></br>
 
 Benefit of Bash Scripting:
 - Automate repetitive tasks.
