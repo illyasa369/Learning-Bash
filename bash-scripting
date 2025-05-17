@@ -51,3 +51,10 @@ All parameters: $@ (Hello World!)
 
 ---
 
+Arithmetic operations:
+
+sum=$((num1+num2))
+
+- Requires $ followed by double brackets.
+
+---
