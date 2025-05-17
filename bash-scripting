@@ -1,4 +1,4 @@
-First line of a bash script begins with the following:
+First line of a bash script:
 
 #!/bin/bash
 
@@ -7,7 +7,8 @@ First line of a bash script begins with the following:
 
 ---
 
-Command for executing scripts:
+Executing scripts:
+
 ./script.sh
 sh script.sh
 bash script.sh
@@ -38,3 +39,15 @@ Variables are accessed using $
 example: echo $variableName
 
 ---
+
+Parameters:
+Each parameter is referenced with $ and the order the parameter was passed.
+
+./parameters.sh Hello World!
+
+1st parameter: $1 (Hello)
+2nd parameter: $2 (World!)
+All parameters: $@ (Hello World!)
+
+---
+
