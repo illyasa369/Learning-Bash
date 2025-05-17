@@ -29,3 +29,12 @@ Running Scripts from any location in a terminal.
 - To execute a script from anywhere the script should be added to any directory specified in the $PATH variable.
 
 ---
+
+Variables:
+
+variableName=value
+
+Variables are accessed using $
+example: echo $variableName
+
+---
