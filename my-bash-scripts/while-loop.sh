@@ -1,15 +1,15 @@
 #!/bin/bash
-
-if [ "$1" -lt 50 ]; then
-	while [ "$1" -lt 100 ]
+num="$1"
+if [ "$num" -lt 50 ]; then
+	while [ "$num" -lt 101 ]
 	do
-		echo "$1"
-		(("$1"++))
+		echo "$num"
+		((num++))
 	done
-elif [ "$1" -ge 50 ]; then 
-	while [ "$1" -gt 0  ]
+elif [ "$num" -ge 50 ]; then 
+	while [ "$num" -gt -1  ]
 	do	
-	echo "$1"
-		(("$1"--))
+	echo "$num"
+		((num--))
 	done
 fi
