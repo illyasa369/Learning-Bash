@@ -68,26 +68,49 @@ fi
 
 ---
 
-Logical operators:
-&& (AND)
-! (NOT)
+if else statements:
 
-Integer comparison operators:
--eq (equal to)
--ne (not equal to)
--gt (greater than)
--lt (less than)
--ge (greater than or equal to)
--le (less than or equal to)
+if [CONDITION]
+then
+	# Code executed if condition is true.
+else
+	# Code executed if condition is false.
+fi
 
-String comparison operators:
-= (equal)
-!= (not equal)
--z (checks if string is empty)
--n (checks if string is not empty)
+---
 
-< (compares alphabetic order, true if LHS comes first)
-> (simiar to previous operator, true if RHS comes first)
-Must use [[]] when defining the condition.
+elif statements:
+
+if [CONDITION]
+then 
+        # Code executed if condition is true.
+elif [CONDITION] 
+then
+        # Code executed if first if statement is false but second is true.
+fi
+
+---
+
+Nested if statements:
+
+if [CONDITION]; then 
+        # Code executed if condition is true.
+	if [CONDITION]; then
+		# Code executed the nested if condition is true.
+	else
+       		# Code executed the  nested if condition is false.
+	fi
+else
+	# Code executed if condition is false.
+fi
+
+---
+
+while loops:
+
+while [CONDITION]
+do
+	# Code executed while condition is true.
+done
 
 ---
