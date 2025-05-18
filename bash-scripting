@@ -41,13 +41,11 @@ example: echo $variableName
 ---
 
 Parameters:
-Each parameter is referenced with $ and the order the parameter was passed.
 
-./parameters.sh Hello World!
-
-1st parameter: $1 (Hello)
-2nd parameter: $2 (World!)
-All parameters: $@ (Hello World!)
+$# : The number of arguments passed.
+$0 : The name of the script.
+$n : n is position of the arguments when executing the script/function.
+$@ : All parameters.
 
 ---
 
@@ -146,3 +144,37 @@ continue - skips remaining code in a loop and continues to the next iteration of
 
 ---
 
+functions:
+
+functionName() {
+	# Code
+}
+
+#Called using the functions name.
+functionName
+
+---
+
+Calling functions with parameters:
+
+functionName() {
+        echo "$1"
+}
+
+functionName Hello
+
+
+- Parameters are referenced using $1 and so on.
+
+---
+
+Local variables:
+
+functionName() {
+        local greeting="Hello World!"
+}
+
+
+- Variables defined inside functions and can only be used in that functon.
+
+---
