@@ -1,0 +1,41 @@
+Functions returns:
+
+Functions can return 2 types of values:
+- Exit status: Value from 0-225, 0 indicating success and all other values indicating failure.
+
+
+	function () {
+		# Code
+		return 0 	
+	}
+	
+	# Function call
+	function
+
+	# $? holds the status of the last command that was executed (0 in this case, indicating success).
+	functionReturn=$?
+
+	---
+
+        function () {
+                # Code
+                return 3        
+        }
+
+        # Function call
+        function
+
+        # $? holds the status of the last command that was executed (3 in this case, indicating failure).
+        functionReturn=$?
+
+
+- Returning strings or data.
+
+        function () {
+                # Code
+		echo "Hello World!"        
+        }
+
+        # Function called and value returned stored in functionReturn variable.
+	functionReturn=$(function)
+	
