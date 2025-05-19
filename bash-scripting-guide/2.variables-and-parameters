@@ -1,0 +1,26 @@
+Variables:
+
+variableName=value
+
+Variables are accessed using $
+example: echo $variableName
+
+---
+
+Local variables:
+
+functionName() {
+        local greeting="Hello World!"
+}
+
+
+- Variables defined inside functions and can only be used in that functon.
+
+---
+
+Parameters:
+
+$# : The number of arguments passed.
+$0 : The name of the script.
+$n : n is position of the arguments when executing the script/function.
+$@ : All parameters.

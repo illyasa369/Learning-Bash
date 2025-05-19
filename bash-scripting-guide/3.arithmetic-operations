@@ -1,0 +1,19 @@
+Arithmetic operations:
+
+sum=$((num1+num2))
+- Requires $ followed by double brackets.
+
+or 
+
+(( sum = num1 + num2 ))
+
+--- 
+
+Arithmetic operators:
+
++ Addition 
+- Subtraction
+* Multiplication
+/ Division
+% Modulus
+** Exponentiation

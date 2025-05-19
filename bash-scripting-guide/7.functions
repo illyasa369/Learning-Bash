@@ -1,0 +1,21 @@
+functions:
+
+functionName() {
+	# Code
+}
+
+#Called using the functions name.
+functionName
+
+---
+
+Calling functions with parameters:
+
+functionName() {
+        echo "$1"
+}
+
+functionName Hello
+
+
+- Parameters are referenced using $1 and so on.

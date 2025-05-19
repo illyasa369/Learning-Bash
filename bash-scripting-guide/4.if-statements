@@ -1,0 +1,44 @@
+if statements:
+
+if [ CONDITION ] 
+then
+	# Code block
+fi
+
+---
+
+if else statements:
+
+if [CONDITION]
+then
+	# Code executed if condition is true.
+else
+	# Code executed if condition is false.
+fi
+
+---
+
+elif statements:
+
+if [CONDITION]
+then 
+        # Code executed if condition is true.
+elif [CONDITION] 
+then
+        # Code executed if first if statement is false but second is true.
+fi
+
+---
+
+Nested if statements:
+
+if [CONDITION]; then 
+        # Code executed if condition is true.
+	if [CONDITION]; then
+		# Code executed the nested if condition is true.
+	else
+       		# Code executed the  nested if condition is false.
+	fi
+else
+	# Code executed if condition is false.
+fi

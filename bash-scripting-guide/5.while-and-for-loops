@@ -1,0 +1,28 @@
+while loop:
+
+while [CONDITION]
+do
+	# Code executed while condition is true.
+done
+
+---
+
+for loop:
+
+for (( i=x; i<y; i++ ))
+do
+	# Code to be executed while value of i is less than y
+done
+
+---
+
+for loop with seq:
+
+for variableName in $(seq x y)
+do 
+	# Code to be executed.
+done
+
+- Simpler syntax.
+- variableName istantiated in the for loop.
+- variableName begins with value x and completes last iteration with value y.

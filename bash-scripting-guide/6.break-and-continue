@@ -1,0 +1,6 @@
+break and continue:
+
+break - exits a loop. If in a nested loop it exits the inner most loop.
+break n - exits n levels of loops.
+
+continue - skips remaining code in a loop and continues to the next iteration of the loop.

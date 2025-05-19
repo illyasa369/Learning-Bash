@@ -1,0 +1,30 @@
+First line of a bash script:
+
+#!/bin/bash
+
+- The shebang #! tells the system which interpreter to use to run the script.
+- /bin/bash is the path of the Bash interpreter so Bash is used to interpret this script.
+
+---
+
+Executing scripts:
+
+./script.sh
+sh script.sh
+bash script.sh
+
+Scripts require execute permissons.
+
+---
+
+Comments:
+
+# is used for single line comments
+: '' is used for multi-line comments. The comment is enclosed within '' and can span multiple lines.
+
+---
+
+Running Scripts from any location in a terminal.
+
+- When executing a script it is required to be in the directory of the script or specify the path to the script.
+- To execute a script from anywhere the script should be added to any directory specified in the $PATH variable.
