@@ -1,0 +1,10 @@
+Error handling:
+
+Using if statements for error handling in Bash is a common and
+effective approach to ensure your script behaves predictably
+when things go wrong (e.g., a command fails or a file isn't found).
+
+if command; then 
+	echo "Success"
+else
+	echo "Failed"
