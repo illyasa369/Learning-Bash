@@ -1,0 +1,17 @@
+Exit codes:
+
+Every command in Bash returns an exit code.
+
+0: Success
+1-255: Failure or specific error type
+
+
+exit allows you to set your own exit code.
+
+if command fails; then
+	# Code
+	exit 1
+else
+	# Code
+	exit 0
+fi
