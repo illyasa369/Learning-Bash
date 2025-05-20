@@ -28,3 +28,9 @@ Running Scripts from any location in a terminal.
 
 - When executing a script it is required to be in the directory of the script or specify the path to the script.
 - To execute a script from anywhere the script should be added to any directory specified in the $PATH variable.
+
+Alternatively, you can add a directory to the $PATH variable.
+Allows all scripts saved in the directory to be ran from any location.
+
+echo "export PATH=$PATH:~/DIRECTORY" >> ~/.bashrc
+source ~/.bashrc
