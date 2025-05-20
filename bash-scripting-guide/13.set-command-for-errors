@@ -1,0 +1,16 @@
+Set command:
+
+Used to modify shell behaviour.
+
+set -e : Instructs the script to exit immediately if a command exits with non-zero code.
+set -u : Treats unset variables as error and exits the script.
+set -x : Prints each command before executing it allowing you to trace what commands are 
+	 running and in what order.
+
+
+By default, only the exit status of the final command in a pipeline is returned. This can hide errors in earlier commands.
+
+set -o pipefail : Entire pipeline fails if any command fails. Also returns the first failing command in the pipeline.
+
+
+set -euxo pipeline : Allows you to utilize all the above together making scripts more robust and easier to debug.
