@@ -4,13 +4,9 @@ set -euo pipefail
 
 recheck=0
 
-echo "Enter the directory to append to PATH variable. (Enter . to use the current directory.)"
-read directory
-
 checkPath() {
 
-	grep "$directory" ~/.bashrc
-	if [ $? -eq 0 ]; then
+	if grep "$directory$" ~/.bashrc ; then
 		if [ "$recheck" -eq 0 ]; then
 			echo "Directory already exists in the path variable."
 			exit 0
@@ -18,21 +14,30 @@ checkPath() {
 			echo "Directory has been added to the path variable."
 			exit 0
 		fi
-	elif [ "$recheck" -eq 1 ]; then
+	else
+		if  [ "$recheck" -eq 1 ]; then
 			echo "Failed to add the directory to path variable."
 			exit 1
-	else
-		return
+		else
+			return 0
+		fi
 	fi
+
 }
 
 addDir () {
 
-	echo "export PATH=$PATH:~/$1" >> ~/.bashrc
+	echo "export PATH=$PATH:~/$directory" >> ~/.bashrc
 	source ~/.bashrc
+	echo ""
 	recheck=1
 
 }
+
+
+echo "Enter the directory to append to PATH variable. (Enter . to use the current directory.)"
+read directory
+echo ""
 
 if [ "$directory" = "." ]; then
 	directory=$(pwd)
