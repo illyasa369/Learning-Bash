@@ -32,5 +32,5 @@ Running Scripts from any location in a terminal.
 Alternatively, you can add a directory to the $PATH variable.
 Allows all scripts saved in the directory to be ran from any location.
 
-echo "export PATH=$PATH:~/DIRECTORY" >> ~/.bashrc
+echo "export PATH=$PATH:PATH-TO-DIRECTORY" >> ~/.bashrc
 source ~/.bashrc
