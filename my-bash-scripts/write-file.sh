@@ -3,9 +3,10 @@
 set -euo pipefail
 
 earlyExit=0
+deleteFile=0
 lineNumber=0
 fileContent=()
-readPath=""
+filePath=""
 usrChoice=""
 
 trap "userExit" SIGINT
@@ -13,6 +14,9 @@ trap "userExit" SIGINT
 
 userExit () {
 	if [ "$earlyExit" -eq 0 ]; then
+		if [ "$deleteFile" -eq 0 ]; then
+			rm "$filePath"
+		fi
 		echo ""
 		echo ""
 		exit 0
@@ -56,6 +60,7 @@ getFileContent () {
 	do
         	read lineText
 		earlyExit=1
+		deleteFile=1
         	fileContent["$lineNumber"]="$lineText"
         	lineNumber=$((lineNumber+1))
 	done
@@ -75,6 +80,7 @@ if [ ! -e "$filePath" ]; then
         if [ "$exitCode" -gt 0 ]; then
                 echo "File path invalid, unable to write to file."
         else
+		echo "File created. $filePath"
                 getFileContent
         fi
 
