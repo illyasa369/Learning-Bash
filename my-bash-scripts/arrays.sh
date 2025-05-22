@@ -6,7 +6,15 @@ count=0
 
 userExit () {
 
-	echo "${myArray[@]}"
+	echo ""
+	echo ""
+	echo "The contents of your array is:"
+	for item in "${myArray[@]}"
+	do
+		echo "$item"
+		echo ""
+	done
+
 	exit 0
 }
 
