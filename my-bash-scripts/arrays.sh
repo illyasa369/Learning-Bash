@@ -12,7 +12,7 @@ do
 	myArray["$count"]="$value"
 	count=$((count+1))
 
-	echo "Do you wish to exit? Enter y or enter any other key to continue:"
+	echo "To exit enter y or enter any other key to continue:"
 	read response
 	echo ""	
 	if [ "$response" = "y" ] || [ "$response" = "Y" ]; then
