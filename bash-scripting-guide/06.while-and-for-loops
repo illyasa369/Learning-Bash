@@ -16,11 +16,21 @@ done
 
 ---
 
+for loop with arrays:
+
+for item in "${array[@]}"
+do
+	echo "$item"
+done
+
+---
+
 for loop with seq:
 
 for variableName in $(seq x y)
 do 
 	# Code to be executed.
+	echo "$variableName"
 done
 
 - Simpler syntax.
