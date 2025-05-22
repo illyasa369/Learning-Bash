@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set euo pipefail
+set -euo pipefail
 
 
 echo "Enter the path of the file you wish to read from."
