@@ -1,0 +1,13 @@
+Reading file content:
+
+
+fileName="/path/to/file.txt"
+
+while IFS= read -r line;
+do
+	echo "$line"
+done < "$fileName"
+
+
+- IFS= ensures whitespaces are not trimmed, the line is read as-is.
+- read -r line does not interpret / as escape characters. Entire line stored in variable line.

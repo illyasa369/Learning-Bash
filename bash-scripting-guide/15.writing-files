@@ -1,0 +1,11 @@
+Writing to files:
+
+
+echo "text" > "path/to/file"
+
+- This will replace the content of file with "text".
+
+
+echo "text" >> "path/to/file"
+
+-This will append "text" to file a new line in file.
