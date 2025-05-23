@@ -1,0 +1,7 @@
+Generating random numbers:
+
+$((RANDOM % x + y))
+
+Will generate a random number between 0 and x
+
++ y shifts this range by y which then generates a random number between x and y.
