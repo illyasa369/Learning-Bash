@@ -1,0 +1,6 @@
+Monitoring files using fswatch:
+
+fswatch can be used to monitor files or directories and can be customized with flags for additional details.
+For example: file creation, file deletion, file modifications
+
+fswatch [ARGS] [PATH]
