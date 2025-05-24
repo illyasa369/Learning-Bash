@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Searches for a given word or phrase within a directory
+# prints the names of the files which return a result.
+
 set -euo pipefail
 
 if [ "$#" -eq 0 ]; then

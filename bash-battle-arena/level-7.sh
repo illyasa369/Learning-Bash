@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Finds all the .txt files in a directory, sorts them by size
+# and returns the filename and size.
+
 set -o pipefail
 
 if [ "$#" -eq 0 ]; then

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Makes a directory and adds three .txt files
+# Checks if a specific file exists within the directory
+# If it does, a new direcory is made and the file is moved into it.
+
 mkdir Battlefield
 touch Battlefield/knight.txt Battlefield/sorcerer.txt Battlefield/rogue.txt
 if [ -e "Battlefield/knight.txt" ]; then

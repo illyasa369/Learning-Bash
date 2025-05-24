@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Counts the number of lines in a file given by the user.
+
 lineCount=0
 filePath="$1"
 
