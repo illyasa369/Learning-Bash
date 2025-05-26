@@ -1,0 +1,25 @@
+File parsing with IFS:
+
+IFS is an Internal Field Seperator which seperates fields based on the character specified.
+
+---
+
+Without field splitting:
+
+while IFS= read -r lines
+do
+	# Code
+done < file.txt
+
+- Disables field splitting and parses entire lines using file.txt which is redirected to the loop.
+
+---
+
+With field splitting:
+
+while IFS='=' read -r key value
+do 
+        # Code 
+done < file.txt
+
+- Parses the lines at the = sign storing the fields before and after = in key and value. 
