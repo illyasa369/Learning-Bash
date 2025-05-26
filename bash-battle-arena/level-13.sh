@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Finds all the .txt files in a directory, sorts them by size
-# and returns the filename and size.
+# Takes directory path, creates a backup directory and creates backup and 
+# stores them in the backup directory. When the directory has 5 backups it
+# removes the oldest backup before creating a new backup.
 
 set -euo pipefail
 
