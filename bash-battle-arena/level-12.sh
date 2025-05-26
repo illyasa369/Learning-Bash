@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Takes specified directory and threshold and monitors the size until it exceeds the threshold.
+# Takes a file path as input, parses the file and prints the fields.
 
 set -euo pipefail
 
