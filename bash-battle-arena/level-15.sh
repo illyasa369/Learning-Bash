@@ -53,7 +53,7 @@ do
 					echo -e "Key - $key\nValue - $value\n"
 				done < settings.conf
 			else 
-				echo "settings.conf not found.\n"
+				echo -e "settings.conf not found.\n"
 			fi
 			;;
 		5)
