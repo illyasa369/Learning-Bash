@@ -1,7 +1,6 @@
 #!/bin/bash
-
-# Searches for a given word or phrase within a directory
-# prints the names of the files which return a result.
+# Searches for a given word or phrase in all .log files within
+# a directory and prints the names of the files which return a result.
 
 set -euo pipefail
 

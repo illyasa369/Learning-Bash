@@ -42,3 +42,22 @@ if [CONDITION]; then
 else
 	# Code executed if condition is false.
 fi
+
+---
+
+Case statements:
+
+case $VARIABLE in
+	1)
+		# Code executed if value of $VARIABLE is equal to 1.
+		;;
+	apple)
+		# Code executed if $VARIABLE is equal to "apple".
+		;;
+	2|3)
+		# Code
+		;;
+	*)
+		# Default code executed if a value other than 1 or apple is given.
+		;;
+esac
