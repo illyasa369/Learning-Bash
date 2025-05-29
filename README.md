@@ -1,9 +1,11 @@
-## This repository includes material used to study and master Bash Scripting. 
+# This repository contains material used to study and master Bash Scripting. 
 
-Bash: Command-line tool to interact with an OS.<br></br>
-Bash Script: File containing commands to be executed automatically.<br></br>
+### What you'll find here:
+### - bash-scripting-guide
+My guide to core bash scripting concepts. <br></br>
 
-Benefit of Bash Scripting:
-- Automate repetitive tasks.
-- Manage files, software installs/updates and system configurations.
-- Boost efficiency.
+### - my-bash-scripts
+Bash scripts demonstrating concepts mentioned in bash-scripting-guide. <br></br>
+
+### - bash-battle-arena
+My solutions to all 15 tasks from CoderCo's Bash Battle Arena — a game-style challenge designed to teach Bash scripting through hands-on, progressively harder tasks, with every 5th level as a "boss fight".
